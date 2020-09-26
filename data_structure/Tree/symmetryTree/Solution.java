@@ -1,6 +1,6 @@
 package symmetryTree;
 
-import Tree.TreeNode;
+import tree.TreeNode;
 
 public class Solution {
     public boolean isSymmetric(TreeNode root) {

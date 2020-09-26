@@ -1,6 +1,6 @@
 package rageOfBST;
 
-import Tree.TreeNode;
+import tree.TreeNode;
 
 public class Solution {
     public int rangeSumBST(TreeNode root, int L, int R) {
