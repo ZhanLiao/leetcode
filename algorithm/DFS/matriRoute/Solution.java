@@ -27,9 +27,10 @@ public class Solution {
             return true;
         }
 
+        // 做选择
         board[i][j] = '\0';
         boolean res =  dfs(board, ch_word, i, j+1, k+1) || dfs(board, ch_word, i+1, j, k+1) || dfs(board, ch_word, i-1, j, k+1) || dfs(board, ch_word, i, j-1, k+1);
-
+        // 取消选择
         board[i][j] = ch_word[k];
 
         return res;

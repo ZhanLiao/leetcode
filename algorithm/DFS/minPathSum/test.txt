@@ -1,0 +1,29 @@
+3 3 2
+java c++
+c++
+go
+c++
+java
+go
+
+3 3 2
+java c++ go
+c++ java
+go python
+c++
+java
+go
+
+4 6 3
+java c++ python
+python
+c++ java
+python
+java
+python
+c++
+python
+c++
+java
+
+

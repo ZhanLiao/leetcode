@@ -1,5 +1,8 @@
 package minSubPolindrom;
 
+import java.util.ArrayList;
+
+
 /**
  * @Author: ZhanLiao
  * @Description:
@@ -7,5 +10,7 @@ package minSubPolindrom;
  * @Version: 1.0
  */
 public class Main {
-
+    public static void main(String[] args) {
+        ArrayList<Integer> integers = new ArrayList<Integer>();
+    }
 }
