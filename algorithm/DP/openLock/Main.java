@@ -11,6 +11,7 @@ public class Main {
         String target = "0202";
         System.out.println("openLock(deads, target) = " + openLock(deads, target));
     }
+
     public static int openLock(String[] deadends, String target) {
         // 存储死亡密码和已经试过的密码
         Set<String> invalids = new HashSet<String>();
