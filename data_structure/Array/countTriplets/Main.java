@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * 相同的两个数异或为0；
- * 任何数与0异或等于其本身；
+ * 1、相同的两个数异或为0；
+ * 2、任何数与0异或等于其本身；
  * 应用：查找数组中唯一重复的元素
  */
 public class Main {
