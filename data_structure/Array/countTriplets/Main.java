@@ -27,7 +27,7 @@ public class Main {
         if (arr.length <= 1){
             return 0;
         }
-        // 存取前缀异或的值
+        // 存取前i项异或的值
         int[] ints = new int[arr.length + 1];
         for (int i = 0; i < arr.length; i++) {
             ints[i+1] = ints[i] ^ arr[i];
