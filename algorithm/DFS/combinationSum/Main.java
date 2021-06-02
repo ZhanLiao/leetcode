@@ -1,7 +1,5 @@
 package combinationSum;
 
-import jdk.nashorn.internal.ir.CallNode;
-
 import java.util.*;
 
 /**
@@ -11,7 +9,6 @@ import java.util.*;
  * @Version: 1.0
  */
 public class Main {
-    static HashSet<ArrayList<Integer>> listHashSet = new HashSet<>();
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -32,31 +29,29 @@ public class Main {
         List<List<Integer>> resList = new ArrayList<>();
         ArrayList<Integer> temp = new ArrayList<>();
         int count = 0;
-        dfs(resList, temp, candidates, target, count);
+        dfs(0, resList, temp, candidates, target, count);
 
         return resList;
     }
 
-    private static void dfs(List<List<Integer>> resList, ArrayList<Integer> temp, int[] candidates, int target, int count) {
+    private static void dfs(int star, List<List<Integer>> resList, ArrayList<Integer> temp, int[] candidates, int target, int count) {
 
         if (count >= target){
             if (target == count){
                 ArrayList<Integer> t = new ArrayList<>(temp);
-                if (!listHashSet.contains(t)){
-                    resList.add(t);
-                }
+                resList.add(t);
             }
             return;
         }
 
-        for (int candidate : candidates) {
-            if (candidate > target){
+        for (int i = star; i < candidates.length; i++) {
+            if (candidates[i] > target){
                 continue;
             }
-            temp.add(candidate);
-            count += candidate;
-            dfs(resList, temp, candidates, target, count);
-            count -= candidate;
+            temp.add(candidates[i]);
+            count += candidates[i];
+            dfs(i, resList, temp, candidates, target, count);
+            count -= candidates[i];
             temp.remove(temp.size() - 1);
         }
     }
