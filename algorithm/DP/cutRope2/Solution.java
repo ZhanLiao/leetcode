@@ -1,4 +1,4 @@
-package cutRope;
+package cutRope2;
 
 /**
  * @Author: ZhanLiao
@@ -22,7 +22,7 @@ public class Solution {
         product[0] = 0;
         product[1] = 1;
         product[2] = 2;
-        product[3] = 3;
+        product[3] = 3; // 这里为什么是三
 
         int max;
         for(int i = 4; i <= n; i++){

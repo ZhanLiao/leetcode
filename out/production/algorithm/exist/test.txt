@@ -1,0 +1,11 @@
+3 4
+see
+a b c e
+s f c s
+a d e e
+输出：true
+2 2
+cdba
+a b
+c d
+输出：true
