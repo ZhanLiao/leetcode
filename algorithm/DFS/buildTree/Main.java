@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  * @Author: ZhanLiao
- * @Description:
+ * @Description: 由前序和中序构建二叉树
  * @Date: 2021/6/7 16:58
  * @Version: 1.0
  */
