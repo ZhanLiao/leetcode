@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/find" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/BFS" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/others" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/math/findDiffNum/Solution" />
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
