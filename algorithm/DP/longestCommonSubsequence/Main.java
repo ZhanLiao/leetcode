@@ -15,6 +15,7 @@ public class Main {
         String text2 = scanner.nextLine();
         scanner.close();
         int ans = longestCommonSubsequence(text1, text2);
+        System.out.println(ans);
     }
 
     private static int longestCommonSubsequence(String text1, String text2) {
