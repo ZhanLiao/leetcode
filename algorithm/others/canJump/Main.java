@@ -19,6 +19,7 @@ public class Main {
             nums[i] = scanner.nextInt();
         }
         boolean ans = canJump(nums);
+        System.out.println(ans);
     }
 
     private static boolean canJump(int[] nums) {
